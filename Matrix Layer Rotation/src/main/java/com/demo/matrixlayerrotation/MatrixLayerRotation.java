@@ -99,6 +99,10 @@ public class MatrixLayerRotation implements CommandLineRunner {
             }
             copy(matrix, temp);
         }
+        printMatrix(matrix);
+    }
+
+    private void printMatrix(List<List<Integer>> matrix) {
         for (List<Integer> value : matrix) {
             for (Integer number : value) {
                 System.out.print(number + " ");
