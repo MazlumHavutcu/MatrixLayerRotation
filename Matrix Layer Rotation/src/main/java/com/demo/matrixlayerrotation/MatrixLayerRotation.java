@@ -99,7 +99,12 @@ public class MatrixLayerRotation implements CommandLineRunner {
             }
             copy(matrix, temp);
         }
-        System.out.println(matrix);
+        for (List<Integer> value : matrix) {
+            for (Integer number : value) {
+                System.out.print(number + " ");
+            }
+            System.out.println();
+        }
     }
 
     public void copy(List<List<Integer>> dest, List<List<Integer>> source) {
